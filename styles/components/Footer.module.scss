@@ -1,0 +1,113 @@
+@import '../variable.scss';
+
+.footer_container {
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
+    background-color: $primary_color;
+
+    .footer_container_root {
+
+        .address_email_phone {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            // margin: 0 20px;
+            padding: 50px 0;
+
+            @media screen and (max-width: 562px) {
+                grid-template-columns: 1fr;
+            }
+
+
+            .address_email_phone_single {
+                text-align: center;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                }
+
+                h3 {
+                    color: white;
+                    font-family: 'Roboto', sans-serif;
+                    line-height: 1.1;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-top: 15px;
+
+                    a {
+                        color: white;
+
+                        &:hover {
+                            color: rgb(198, 198, 198);
+                        }
+                    }
+                }
+
+                p {
+                    color: #AEAACB;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .items_list {
+            padding: 20px 5px;
+
+            ul {
+                li {
+                    display: inline-block;
+                    color: white;
+                    list-style: none;
+                    margin: 0 30px;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 17px;
+
+                    @media screen and (max-width: 608px) {
+                        margin: 0 20px;
+                    }
+
+                    @media screen and (max-width: 508px) {
+                        margin: 0 5px;
+                    }
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            color: white;
+            padding: 5px 20px;
+            text-align: center;
+
+            a {
+                color: #AEAACB;
+            }
+        }
+
+        .contact {
+            .social {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    margin: 20px 10px;
+                    color: white;
+                    font-size: 24px;
+                    // background-color: white;
+                    padding: 5px 5px;
+                    // border-radius: ;
+                }
+
+            }
+        }
+    }
+
+
+}

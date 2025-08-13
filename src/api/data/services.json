@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "icon": "/services/icon1.png",
+        "title": "Launch Your Branded Empire",
+        "para": "Own 100% of enterprise-grade SaaS, CRM, or Edtech platforms — we code, you keep the profits",
+        "image": "/services/s1.png"
+    },
+    {
+        "id": 2,
+        "icon": "/services/icon2.png",
+        "title": "Hyper-Grade Custom Dev",
+        "para": "10M ARR Bespoke Digital products for explosive growth, we won't quit until you hit $100K revenue.",
+        "image": "/services/s2.png"
+    },
+    {
+        "id": 3,
+        "icon": "/services/icon3.png",
+        "title": "Startup Growth Engine",
+        "para": "We build your tech AND fill your pipeline. Guaranteed 500 leads/month or we work free.",
+        "image": "/services/s3.png"
+    },
+    {
+        "id": 4,
+        "icon": "/services/icon4.png",
+        "title": "Telematics Powerhouse",
+        "para": "Embed our battle-tested chat, scheduling & analytics modules — no 6-month dev cycles.",
+        "image": "/services/s4.png"
+    },
+    {
+        "id": 5,
+        "icon": "/services/icon5.png",
+        "title": "Equity-Free Scale Stack",
+        "para": "Enterprise infrastructure that grows with you. No licenses, no equity grabs, no BS.",
+        "image": "/services/s5.png"
+    },
+    {
+        "id": 6,
+        "icon": "/services/icon6.png",
+        "title": "Unlimited Scale Support",
+        "para": "Code emergencies? Scaling panics? Our 20+ experts fix it in 20 seconds flat.",
+        "image": "/services/s6.png"
+    }
+]

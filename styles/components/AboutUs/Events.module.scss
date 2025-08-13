@@ -1,0 +1,40 @@
+.event_container {
+    padding: 20px 0;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.1;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+
+        @media screen and (max-width: 828px) {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+        @media screen and (max-width: 688px) {
+            grid-template-columns: 1fr;
+        }
+
+        .single_event {
+
+            img {
+                height: 400px;
+                width: 100%;
+                object-fit: cover;
+
+                @media screen and (max-width: 688px) {
+                    object-fit: contain;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

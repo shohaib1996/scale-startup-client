@@ -1,0 +1,41 @@
+.position_container_root {
+    background-color: #F5F6F8;
+
+    .position_container {
+        padding: 50px 10px;
+
+        @media screen and (max-width: 672px) {
+            padding: 20px 10px;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 38px;
+        }
+
+        .hr {
+            border: 2px solid #80AF41;
+            width: 20%;
+            margin: 10px 0 5px 0;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        button {
+            margin: 15px 0 0 0;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
+            cursor: pointer;
+            background-color: #1D3060;
+            color: white;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,338 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+    :root {
+        /* #1D3060 - Dark shade of blue- Space Cadet */
+        --primary: 223, 54%, 25%;
+
+        /* #E8EAEF - Lavender Gray */
+        --primary-muted: 223, 18%, 92%;
+
+        /* #F15A2D - Tangerine */
+        --secondary: 14, 87%, 56%;
+
+        /* #355BFB - Ultramarine Blue */
+        --tertiary: 228, 96%, 60%;
+
+        /* -------------- Text Color -------------  */
+
+        /* #040A1A  - Section Title Color */
+        --titleText: 224, 73%, 6%;
+
+        /* #040A1A - Heading Text Color Rich Black */
+        --headText: 224, 73%, 6%;
+
+        /* #4F545E - Davy's Gray */
+        --textGray: 220, 9%, 34%;
+
+        /* #BFBFBF - Silver Gray */
+        --textSilver: 0, 0%, 75%;
+
+        /* -------------- Background Color -------------  */
+
+        /* #0531C3 - Blue */
+        --backPrimary: 226, 95%, 39%;
+
+        /* #FDFBF4 - Isabelline */
+        --backSecondary: 47, 69%, 97%;
+
+        /* #FFDB86  - Section Title Background */
+        --backTitle: 42, 100%, 76%;
+
+        /* #FFFFFF  - White Section Background */
+        --backWhite: 0, 0%, 100%;
+
+        /* -------------- Our Service BG Color -------------  */
+
+        /* #6089F926 - Light Blue */
+        --lightBlue: 224, 93%, 68%;
+
+        /* #FF8F001A - Light Brown */
+        --lightBrown: 266, 84%, 47%;
+
+        /* #40D9BD26 - Light Pest */
+        --lightPest: 189, 80%, 48%;
+
+        /* #46FD2B1A - Light Green */
+        --lightGreen: 329, 82%, 65%;
+
+        /* #6C3BEB1A - Light Purple */
+        --lightPurple: 28, 87%, 62%;
+
+        /* #EF476F1A - Rose pink */
+        --rosePink: 28, 87%, 62%;
+
+        /* -------------- Customer Experience  -------------  */
+
+        /* #E73EE7 - Pink */
+        --bgPink: 300, 78%, 57%;
+
+        /* #0FCEEE - Sky */
+        --bgSky: 189, 88%, 50%;
+
+        /* #6F3AF9 - Purple */
+        --bgPurple: 257, 94%, 60%;
+
+        /* #17F8D0 - Pest */
+        --bgPest: 169, 94%, 53%;
+
+        /* -------------- Other Color -------------  */
+
+        /* #F2C94C - Sunset Gold */
+        --gold: 45, 86%, 62%;
+
+        /* #6A13DD - Royal Purple */
+        --purple: 266, 84%, 47%;
+
+        /* #19C1DD - Sky Blue */
+        --sky: 189, 80%, 48%;
+
+        /* #EF5DA8 - Hot Pink */
+        --pink: 329, 82%, 65%;
+
+        /* #F2994A - Saffron Orange */
+        --orange: 28, 87%, 62%;
+
+        /* -------------- Extra Color -------------  */
+
+        /* #040F2B - Header Footer */
+        --nav: 223, 83%, 9%;
+
+        /* #FBD725 - Icon Background */
+        --iconBack: 50, 96%, 56%;
+    }
+    .dark {
+        /* #1D3060 - Dark shade of blue- Space Cadet */
+        --primary: 223, 54%, 25%;
+
+        /* #E8EAEF - Lavender Gray */
+        --primary-muted: 223, 18%, 92%;
+
+        /* #F15A2D - Tangerine */
+        --secondary: 14, 87%, 56%;
+
+        /* #355BFB - Ultramarine Blue */
+        --tertiary: 228, 96%, 60%;
+
+        /* -------------- Text Color -------------  */
+
+        /* #040A1A  - Section Title Color */
+        --titleText: 224, 73%, 6%;
+
+        /* #FFFFFF - Heading Text Color / Rich Black */
+        --headText: 0, 0%, 100%;
+
+        /* #4F545E - Davy's Gray */
+        --textGray: 220, 9%, 34%;
+
+        /* #353836 - Silver Gray / Line Color */
+        --textSilver: 140, 3%, 21%;
+
+        /* -------------- Background Color -------------  */
+
+        /* #141A16 - Blue / Black */
+        --backPrimary: 140, 13%, 9%;
+
+        /* #04122C - Isabelline */
+        --backSecondary: 219, 83%, 9%;
+
+        /* #FFDB86  - Section Title Background */
+        --backTitle: 42, 100%, 76%;
+
+        /* #0f172a  - White Section Background */
+        --backWhite: 222, 47%, 11%;
+
+        /* -------------- Our Service BG Color -------------  */
+
+        /* #6089F926 - Light Blue */
+        --lightBlue: 45, 86%, 62%;
+
+        /* #FF8F001A - Light Brown */
+        --lightBrown: 266, 84%, 47%;
+
+        /* #40D9BD26 - Light Pest */
+        --lightPest: 189, 80%, 48%;
+
+        /* #46FD2B1A - Light Green */
+        --lightGreen: 329, 82%, 65%;
+
+        /* #6C3BEB1A - Light Purple */
+        --lightPurple: 28, 87%, 62%;
+
+        /* #EF476F1A - Rose pink */
+        --rosePink: 28, 87%, 62%;
+
+        /* -------------- Other Color -------------  */
+
+        /* #F2C94C - Sunset Gold */
+        --gold: 45, 86%, 62%;
+
+        /* #6A13DD - Royal Purple */
+        --purple: 266, 84%, 47%;
+
+        /* #19C1DD - Sky Blue */
+        --sky: 189, 80%, 48%;
+
+        /* #EF5DA8 - Hot Pink */
+        --pink: 329, 82%, 65%;
+
+        /* #F2994A - Saffron Orange */
+        --orange: 28, 87%, 62%;
+
+        /* -------------- Extra Color -------------  */
+
+        /* #141A16 - Header Footer / backPrimary */
+        --nav: 140, 13%, 9%;
+    }
+}
+
+.maxContainer {
+    max-width: 1980px;
+    margin: 0 auto;
+}
+
+.myContainer {
+    max-width: 1480px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.sectionName {
+    font-size: 0.75rem; /* equivalent to text-xs */
+    font-weight: bold; /* equivalent to font-bold */
+    background-color: hsla(var(--backTitle), 0.8); /* Opacity of 80% */
+    padding: 0.25rem 1rem; /* equivalent to px-4 py-1 */
+    border-radius: 9999px; /* equivalent to rounded-full */
+    color: hsl(var(--titleText)); /* Use titleText for text color */
+    width: max-content;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: normal;
+    /* text-align: left; */
+    color: hsl(var(--headText));
+}
+
+.subHeading {
+    font-size: 20px; /* equivalent to text-2xl */
+    font-weight: 600; /* equivalent to font-semibold */
+    /* text-align: left;  */
+    color: hsl(var(--headText)); /* Using the text color variable */
+}
+
+.para {
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 28px; */
+    /* text-align: left; */
+    color: hsl(var(--headText));
+    opacity: 0.8; /* Separate opacity value */
+}
+
+.subPara {
+    font-size: 12px;
+    font-weight: 400;
+    /* line-height: 28px; */
+    text-align: left;
+    color: hsl(var(--headText));
+    opacity: 0.9; /* Separate opacity value */
+}
+
+/* Button Hover Effect */
+.buttonHover {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.buttonHover::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -3rem;
+    height: 8rem;
+    width: 2rem;
+    background-color: white;
+    opacity: 0.1;
+    transform: translateX(3rem) rotate(12deg);
+    transition: all 0.8s;
+}
+
+.buttonHover:hover::before {
+    transform: translateX(-10rem) rotate(12deg);
+}
+
+@media (min-width: 768px) {
+    .sectionName {
+        font-size: 1rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .subHeading {
+        font-size: 24px;
+    }
+
+    .para {
+        font-size: 18px;
+    }
+
+    .subPara {
+        font-size: 16px;
+    }
+}
+
+@keyframes borderRun {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+body > div:nth-child(141) {
+    background-color: white;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body > div:nth-child(141) {
+        background-color: #1a1a1a;
+    }
+}

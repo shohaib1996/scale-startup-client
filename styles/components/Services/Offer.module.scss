@@ -1,0 +1,58 @@
+@import '../../variable';
+.offer_container {
+    h1 {
+        color: black;
+        font-size: 40px;
+        font-weight: 900;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.2;
+        text-align: center;
+        padding: 25px 0 15px 0;
+    }
+
+    .offer_container_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @media screen and (max-width: 738px) {
+            grid-template-columns: 1fr;
+        }
+
+        .single_offer_container {
+            text-align: center;
+            margin: 30px 5px;
+            border: 1px solid #E7E7E7;
+            padding: 50px 5px;
+            transition: all 0.3s ease;
+            // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+            &:hover {
+                background-color: #E7E7E7;
+            }
+
+            @media screen and (max-width: 738px) {
+                margin: 30px 10px;
+            }
+
+            @media screen and (max-width: 592px) {
+                margin: 7px 10px;
+            }
+
+            h2 {
+                font-size: 22px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                line-height: 1.1;
+                padding: 5px 10px;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.3;
+                padding: 5px 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,183 @@
+.snake-container {
+    position: absolute;
+    top: 50%; /* Adjust the top value to where you want the snake to move */
+    left: -150px; /* Start the snake off-screen on the left */
+    animation: moveSnake 10s linear infinite; /* Animation duration and infinite loop */
+}
+
+@keyframes moveSnake {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(
+            100vw
+        ); /* Move the snake to the right side of the screen */
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-ring {
+    animation: rotate 10s linear infinite; /* Rotates the element infinitely in 10 seconds */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.rotating-pulse {
+    animation:
+        rotate 10s linear infinite,
+        pulse 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
+.rotating-bounce {
+    animation:
+        rotate 10s linear infinite,
+        bounce 5s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.rotating-fade {
+    animation:
+        rotate 10s linear infinite,
+        fade 3s ease-in-out infinite;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.rotating-zoom {
+    animation:
+        rotate 10s linear infinite,
+        zoom 5s ease-in-out infinite;
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.rotating-wobble {
+    animation: wobble 2s ease-in-out infinite;
+}
+
+@keyframes shrink {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(0.8);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.rotating-shrink {
+    animation: shrink 4s ease-in-out infinite;
+}
+
+/* Combine Animations */
+.rotating-bounce-fade {
+    animation:
+        rotate 1s linear infinite,
+        bounce 2s ease-in-out infinite;
+    /* fade 3s ease-in-out infinite; */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow:
+            0 0 5px rgba(255, 255, 255, 0.1),
+            0 0 10px rgba(255, 255, 255, 0.1),
+            0 0 20px rgba(255, 255, 255, 0.1),
+            0 0 30px rgba(96, 124, 246, 0.2),
+            0 0 50px rgba(96, 124, 246, 0.2),
+            0 0 100px rgba(96, 124, 246, 0.3),
+            0 0 200px rgba(96, 124, 246, 0.4);
+    }
+    50% {
+        box-shadow:
+            0 0 10px rgba(255, 255, 255, 0.2),
+            0 0 20px rgba(255, 255, 255, 0.2),
+            0 0 30px rgba(255, 255, 255, 0.2),
+            0 0 40px rgba(96, 124, 246, 0.4),
+            0 0 60px rgba(96, 124, 246, 0.4),
+            0 0 120px rgba(96, 124, 246, 0.5),
+            0 0 240px rgba(96, 124, 246, 6);
+    }
+    100% {
+        box-shadow:
+            0 0 5px rgba(255, 255, 255, 0.1),
+            0 0 10px rgba(255, 255, 255, 0.1),
+            0 0 20px rgba(255, 255, 255, 0.1),
+            0 0 30px rgba(96, 124, 246, 0.2),
+            0 0 50px rgba(96, 124, 246, 0.2),
+            0 0 100px rgba(96, 124, 246, 0.3),
+            0 0 200px rgba(96, 124, 246, 0.4);
+    }
+}
+
+.glowing {
+    animation: glow 5s infinite ease-in-out;
+    border-radius: 50%;
+    background-color: #607cf6;
+}

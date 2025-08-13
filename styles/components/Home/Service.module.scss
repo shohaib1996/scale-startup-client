@@ -1,0 +1,16 @@
+.service_container {
+
+    .service_container_single {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+
+        @media screen and (max-width: 862px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (max-width: 612px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

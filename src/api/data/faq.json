@@ -1,0 +1,32 @@
+[
+    {
+        "id": "item-1",
+        "no": "01",
+        "question": "Can You Build My Vision in 7 Days or Just Talk?",
+        "answer": "We Launch MVPs in 7 Days Using Pre-Built AI/Telematics Modules — You Own 100% of the Code. No Royalties, Ever."
+    },
+    {
+        "id": "item-2",
+        "no": "02",
+        "question": "How Do I Skip the BS and Get a $1M Roadmap?",
+        "answer": "Free 15-Min ‘Profit Explosion’ Audit: We’ll Hand You a 12-Month Scale Plan + 500 Guaranteed Leads."
+    },
+    {
+        "id": "item-3",
+        "no": "03",
+        "question": "Will You Abandon Me After Launch Like Others?",
+        "answer": "24/7 Crisis Support: Code Fixes in 20 minutes or We Work Free. Guaranteed delivery in 90 Days — Or We Rebuild for $0."
+    },
+    {
+        "id": "item-4",
+        "no": "04",
+        "question": "What’s Your Secret Sauce to Crush Competitors?",
+        "answer": "AI-Powered Telematics, Serverless Architecture & Explosive Modules We’ve Built for 237 Startups."
+    },
+    {
+        "id": "item-5",
+        "no": "05",
+        "question": "Can You Beat My Nightmare Dev Timeline?",
+        "answer": "MVP in 7 Days. Full Scale in 30. Pre-built modules Cut Dev Time by 80%. Pay $0 Until You Scale."
+    }
+]

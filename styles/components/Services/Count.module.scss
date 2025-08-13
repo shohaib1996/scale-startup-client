@@ -1,0 +1,62 @@
+@import '../../variable';
+
+.client_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: $tertiary_color;
+    padding: 50px 0;
+    margin: 50px auto;
+
+    @media screen and (max-width: 512px) {
+        padding: 20px 0;
+    }
+
+
+    @media screen and (max-width: 862px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 512px) {
+        grid-template-columns: 1fr;
+    }
+
+    .client {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 512px) {
+            margin-top: 15px;
+        }
+
+        .count_Images {
+            img {
+                // width: 100%;
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .client_status {
+            h1 {
+                color: rgb(255, 255, 255);
+                font-size: 50px;
+
+                @media screen and (max-width: 512px) {
+                    font-size: 40px;
+                }
+            }
+
+            h5 {
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                opacity: 0.8;
+
+                @media screen and (max-width: 512px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.solutions_header {
+    // background: linear-gradient(rgba(0, 0, 0, 0.7),
+    //         rgba(0, 0, 0, 0.7)), url('/services/solutions/solutions.png');
+    background: linear-gradient(to right, #6d252e80, #bfe9ff80), url('/services/solutions/solutions.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+
+    .solutions_deatails {
+        // margin: 0 auto;
+        padding: 180px 10px;
+
+
+        // @media screen and (max-width: 912px) {
+        //     padding: 20% 10px;
+        // }
+
+        // @media screen and (max-width: 912px) {
+        //     padding: 30% 10px;
+        // }
+        
+
+        h1 {
+            font-family: "Montserrat", Helvetica, Arial, sans-serif;
+            font-size: 55px;
+            font-weight: 700;            
+            color: #141D38;
+
+        }
+    }
+
+}
