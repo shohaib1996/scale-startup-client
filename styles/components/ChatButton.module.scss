@@ -1,0 +1,47 @@
+@import '../variable';
+
+.chat_button {
+    padding: 50px 0;
+    // display: grid;
+    // justify-content: center;
+
+    @media screen and (max-width: 722px) {
+        padding: 10px 0;
+    }
+
+    .btn_container {
+        display: flex;
+
+        @media screen and (max-width: 512px) {
+            flex-direction: column;
+        }
+
+        button {
+            margin: 0 20px;
+            padding: 18px 35px;
+            background-color: $primary_color;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            // width: 100%;
+            display: inline;
+            border-radius: 40px;
+    
+            &:hover {
+                background-color: $primary_color_hover;
+    
+            }
+    
+            @media screen and (max-width: 722px) {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 512px) {
+                margin-top: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "extends": [
+        "next/core-web-vitals",
+        "next/typescript",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "argsIgnorePattern": "^_",
+                "args": "none"
+            }
+        ],
+        "@typescript-eslint/no-explicit-any": "off",
+        "react/no-unescaped-entities": "off",
+        "no-console": "warn",
+        "@next/next/no-css-tags": "off", // Disables warning about manual CSS inclusion
+        "@next/next/no-sync-scripts": "off" // Disables warning about synchronous scripts
+    },
+    "overrides": [{
+        "files": ["pages/_document.js"], // Targeting the specific file
+        "rules": {
+            "prettier/prettier": "off", // Disables Prettier formatting errors
+            "@next/next/no-css-tags": "off", // Redundant but ensures no CSS tag warnings
+            "@next/next/no-sync-scripts": "off" // Redundant but ensures no sync script warnings
+        }
+    }]
+}

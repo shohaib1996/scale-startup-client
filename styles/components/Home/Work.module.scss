@@ -1,0 +1,14 @@
+.work_container {
+    .agile {
+        img {
+            // width: 100%;
+            object-fit: cover;
+            height: auto;
+            padding: 5px;
+
+            @media screen and (max-width: 688px) {
+                width: 100%;
+            }
+        }
+    }
+}

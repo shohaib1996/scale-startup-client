@@ -1,0 +1,112 @@
+@import '../../variable';
+
+.project_container {
+    .mySwiper {
+        padding: 100px 0;
+        background-color: #F8F8F8;
+
+        // @media screen and (max-width: 592px) {
+        //     padding: 80px 0;
+        // }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 400px;
+            position: relative;
+            transition: all 0.3s ease;
+            overflow: hidden;
+
+            &:hover {
+                opacity: 0.7;
+                transform: scale(1.05);
+            }
+        }
+
+        .agile {
+            background-color: #4cdfa4 !important;
+            opacity: 0.9;
+        }
+
+        .web {
+            background-color: $primary_color !important;
+            opacity: 0.9;
+        }
+
+        .mobile {
+            background-color: #4cdfa4 !important;
+            opacity: 0.9;
+        }
+
+        .sliderTitle {
+            position: absolute;
+            background-color: $primary_color;
+            opacity: 0.9;
+            padding: 30px 0;
+            bottom: -40px;
+            width: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+
+            @media screen and (max-width: 512px) {
+                padding: 25px 0;
+            }
+
+            h2 {
+                color: white;
+                text-align: center;
+                line-height: 0.7;
+                // margin-bottom: 5px;
+            }
+        }
+
+        .industry_single_container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid #E7E7E7;
+            height: 300px;
+            padding: 5px;
+            margin: 0 5px;
+            border-radius: 10px;
+            box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+            // transition: all 0.3s ease;
+
+            @media screen and (max-width: 612px) {
+                height: 400px;
+            }
+
+            .industry_single_img {
+                img {
+                    object-fit: contain;
+                    width: 100%;
+                    height: 600px;
+                }
+            }
+
+            .industry_single_details {
+                padding: 0 5px;
+                p {
+                    font-family: "Nunito Sans", sans-serif;
+                    color: #6d6d6d;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-top: 10px;
+                    // text-align: justify;
+
+                    @media screen and (max-width: 612px) {
+                        font-size: 16px;
+                        line-height: 1.1;
+                    }
+                }
+
+                h2 {
+                    @media screen and (max-width: 612px) {
+                        line-height: 1.1;
+                    }
+                }
+            }
+        }
+    }
+}

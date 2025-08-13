@@ -1,0 +1,21 @@
+# Default values for ts4u-backend.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+namespace: ms-production
+
+host: www.scalestartup.ai
+
+image:
+  name: scalestartup
+  repository: ts4udocker/scalestartup
+  tag: main-latest
+  pullPolicy: Always
+imagePullSecrets:
+  name: regcred
+
+
+
+

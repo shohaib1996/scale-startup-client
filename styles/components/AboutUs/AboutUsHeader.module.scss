@@ -1,0 +1,62 @@
+@import '../../_variable';
+
+.about_header_container {
+
+    background-color: $primary_color;
+
+    .about_header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media screen and (max-width: 828px) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .image {
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: auto;
+
+                @media screen and (max-width: 828px) {
+                    height: 250px;
+                }
+            }
+        }
+
+        .header_details {
+            margin: auto;
+
+            h1 {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.1;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+
+                @media screen and (max-width: 828px) {
+                    font-size: 30px;
+                    text-align: center;
+
+                }
+            }
+
+            p {
+                margin: 15px 0;
+                text-align: justify;
+                text-justify: inter-word;
+                color: white;
+                padding: 0 10px;
+                font-size: 17px;
+                font-family: "Roboto", sans-serif;
+                line-height: 1.3;
+                padding: 5px 10px;
+
+                @media screen and (max-width: 962px) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

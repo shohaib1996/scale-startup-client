@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Mobile Apps Design",
+        "category": "Creative Design",
+        "image": "/portfolio/Mobile.png",
+        "type": "mobile"
+    },
+    {
+        "title": "Landing Page",
+        "category": "Creative Design",
+        "image": "/portfolio/iPadPro.png",
+        "type": "web"
+    },
+    {
+        "title": "Company Dashboard",
+        "category": "Creative Design",
+        "image": "/portfolio/iPad.png",
+        "type": "desktop"
+    },
+    {
+        "title": "VocalizePro Website",
+        "category": "Website Design",
+        "image": "/portfolio/iMac2.png",
+        "type": "web"
+    },
+    {
+        "title": "Bootcamp Website Design",
+        "category": "Creative Design",
+        "image": "/portfolio/Studio.png",
+        "type": "web"
+    },
+    {
+        "title": "E-commerce Landing Page",
+        "category": "Creative Design",
+        "image": "/portfolio/iMac.png",
+        "type": "web"
+    },
+    {
+        "title": "Illustration Design",
+        "category": "Creative Design",
+        "image": "/portfolio/Hand.png",
+        "type": "mobile"
+    },
+    {
+        "title": "Dashboard Designn",
+        "category": "Creative Design",
+        "image": "/portfolio/iPadPro2.png",
+        "type": "desktop"
+    },
+    {
+        "title": "Mobile Apps Design",
+        "category": "Creative Design",
+        "image": "/portfolio/Mobile.png",
+        "type": "seo"
+    },
+    {
+        "title": "Landing Page",
+        "category": "Creative Design",
+        "image": "/portfolio/iPadPro.png",
+        "type": "cloudops"
+    },
+    {
+        "title": "Company Dashboard",
+        "category": "Creative Design",
+        "image": "/portfolio/iPad.png",
+        "type": "desktop"
+    },
+    {
+        "title": "VocalizePro Website",
+        "category": "Website Design",
+        "image": "/portfolio/iMac2.png",
+        "type": "cloudops"
+    },
+    {
+        "title": "Bootcamp Website Design",
+        "category": "Creative Design",
+        "image": "/portfolio/Studio.png",
+        "type": "seo"
+    },
+    {
+        "title": "E-commerce Landing Page",
+        "category": "Creative Design",
+        "image": "/portfolio/iMac.png",
+        "type": "web"
+    },
+    {
+        "title": "Illustration Design",
+        "category": "Creative Design",
+        "image": "/portfolio/Hand.png",
+        "type": "seo"
+    },
+    {
+        "title": "Dashboard Designn",
+        "category": "Creative Design",
+        "image": "/portfolio/iPadPro2.png",
+        "type": "cloudops"
+    }
+]

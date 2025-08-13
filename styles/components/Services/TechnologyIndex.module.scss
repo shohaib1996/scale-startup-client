@@ -1,0 +1,83 @@
+@import '../../variable';
+
+.technology_index_root_container {
+    // padding: 50px;
+    background-color: $primary_color;
+
+    .technology_index_container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0 10px;
+
+        @media screen and (max-width: 950px) {
+            grid-template-columns: 1fr;
+        }
+
+        .technology_index_left {
+            margin: auto;
+
+            h1 {
+                color: white;
+                font-size: 36px;
+                font-weight: 700;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.2;
+                margin-top: 20px;
+
+                @media screen and (max-width: 500px) {
+                    font-size: 28px;
+                }
+            }
+
+            .index_btn {
+                button {
+                    border: none;
+                    padding: 15px 30px;
+                    margin: 20px 15px 15px 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: 'Roboto', sans-serif;
+                    cursor: pointer;
+
+                    @media screen and (max-width: 431px) {
+                        padding: 10px 20px;
+                        margin: 20px 12px 12px 0;
+                    }
+                }
+
+                .active {
+                    background-color: #0ac0a6;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.4;
+                color: white;
+                margin-bottom: 10px;
+                max-width: 90%;
+                text-align: justify;
+                text-justify: inter-word;
+
+                @media screen and (max-width: 500px) {
+                    width: 100%;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .technology_index_right {
+            img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                opacity: 0.5;
+
+                @media screen and (max-width: 700px) {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}

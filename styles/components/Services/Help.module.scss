@@ -1,0 +1,111 @@
+.help_container {
+
+    .help_container_header {
+
+        h1 {
+            color: black;
+            font-size: 40px;
+            font-weight: 900;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.2;
+            text-align: center;
+            padding: 35px 0 5px 0;
+
+            @media screen and (max-width: 592px) {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .help_details_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        // gap: 10px;
+
+        @media screen and (max-width: 712px) {
+            grid-template-columns: 1fr;
+        }
+
+        .help_details_single {
+
+            .help_title_desc {
+                margin: 80px 15px;
+
+                @media screen and (max-width: 592px) {
+                    margin: 40px 15px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 1.1;
+                    font-family: 'Roboto', sans-serif;
+                    text-align: right;
+                    padding: 0 15px;
+
+                    @media screen and (max-width: 712px) {
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    font-family: 'Roboto', sans-serif;
+                    line-height: 1.5;
+                    margin-top: 15px;
+                    max-width: 95%;
+                    opacity: 0.8;
+                    text-align: right;
+
+                    @media screen and (max-width: 738px) {
+                        margin-top: 8px;
+                    }
+
+                    @media screen and (max-width: 712px) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .help_details_third {
+
+            .help_title_desc {
+
+                h2 {
+                    text-align: left;
+                    padding: 0;
+
+                    @media screen and (max-width: 712px) {
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    text-align: left;
+
+                    @media screen and (max-width: 712px) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .help_details_second {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+
+            img {
+                object-fit: contain;
+                height: 350px;
+                width: 100%;
+
+                @media screen and (max-width: 592px) {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

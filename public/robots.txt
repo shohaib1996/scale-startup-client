@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://techserve4u.com/sitemap.xml
+

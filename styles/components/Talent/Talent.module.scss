@@ -1,0 +1,82 @@
+@import '../../variable';
+
+.talent_header {
+    background: linear-gradient(to right, #6d252e80, #bfe9ff80), url('/services/talent/software-developer.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    // background-color: rgba(0, 0, 0, 0.5);;
+    // mix-blend-mode: multiply;
+    // opacity: 0.5;
+    position: relative;
+
+    @media screen and (max-width: 512px) {
+        height: 400px;
+    }
+
+    .talent_deatails {
+        // margin: 0 auto;
+        padding: 170px 10px;
+
+        // @media screen and (max-width: 912px) {
+        //     padding: 20% 10px;
+        // }
+
+        // @media screen and (max-width: 912px) {
+        //     padding: 30% 10px;
+        // }
+
+        h1 {
+            font-family: "Montserrat", Helvetica, Arial, sans-serif;
+            font-size: 55px;
+            font-weight: 700;            
+            color: #141D38;
+        }
+
+        .position_btn {
+            margin-top: 10px;
+            padding: 10px 40px;
+            outline: none;
+            border: none;
+            background: #141D38;
+            color: white;
+            font-size: 16px;
+            border: 1px solid #141D38;
+            font-family: 'Roboto', sans-serif;
+
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            // &:hover {
+            //     background-color: #80AF41;
+            // }
+        }
+    }
+
+    .shape_image {
+        z-index: 2000;
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+
+        @media screen and (max-width: 512px) {
+            display: none;
+            // overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+
+            @media screen and (max-width: 912px) {
+                height: 300px;
+            }
+
+            @media screen and (max-width: 512px) {
+                height: 200px;
+            }
+        }
+    }
+}

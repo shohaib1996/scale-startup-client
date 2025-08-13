@@ -1,0 +1,33 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scalestartup
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: scalestartup
+  template:
+    metadata:
+      labels:
+        app: scalestartup
+    spec:
+      containers:
+        - name: {{ .Values.image.name }}
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          imagePullPolicy: Always
+          resources:
+            limits:
+              # cpu: "1"
+              # memory: "1Gi"
+              cpu: "500m"
+              memory: "512Mi"
+            requests:
+              # cpu: "500m"
+              # memory: "512Mi"
+              cpu: "250m"
+              memory: "512Mi"
+      imagePullSecrets:
+      - name: {{ .Values.imagePullSecrets.name }}
